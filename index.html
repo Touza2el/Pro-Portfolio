@@ -1,40 +1,493 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Slider Carousel</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <title>Website</title>
   </head>
   <body>
-    <div class="container">
-      <div class="carousel">
-        <div class="slider">
-          <section></section>
-          <section></section>
-          <section></section>
-          <section></section>
-          <section></section>
+    <!-- Start Header Section -->
+
+    <header class="header-section">
+      <div class="header-content">
+        <div class="logo">
+          <a class="logo-a" href="#"
+            >Best<span class="logo-span">C</span>oding</a
+          >
         </div>
-        <div class="controls">
-          <span class="arrow left">
-            <i class="material-icons">
-              keyboard_arrow_left
-            </i>
-          </span>
-          <span class="arrow right">
-            <i class="material-icons">
-              keyboard_arrow_right
-            </i>
-          </span>
-          <ul>
-            <li class="selected"></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+        <div class="nav-bar">
+          <ul class="nav-ul">
+            <li class="nav-ul-li">
+              <a class="nav-ul-li-a active home" href="#">home</a>
+            </li>
+            <li class="nav-ul-li">
+              <a class="nav-ul-li-a" href="#">about</a>
+            </li>
+            <li class="nav-ul-li sub-menu-parent">
+              <a class="nav-ul-li-a" href="#">skills</a>
+              <i class="fas fa-chevron-down chevron-icon"></i>
+              <ul class="sub-menu-child">
+                <li class="sub-menu-li">
+                  <a class="sub-menu-a" href="#">design</a>
+                </li>
+                <li class="sub-menu-li">
+                  <a class="sub-menu-a" href="#">coding</a>
+                </li>
+                <li class="sub-menu-li">
+                  <a class="sub-menu-a" href="#">maketing</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-ul-li">
+              <a class="nav-ul-li-a" href="#">portfolio</a>
+            </li>
+
+            <li class="nav-ul-li">
+              <a class="nav-ul-li-a" href="#">services</a>
+            </li>
+            <li class="nav-ul-li">
+              <a class="nav-ul-li-a" href="#">blog</a>
+            </li>
+            <li class="nav-ul-li">
+              <a class="nav-ul-li-a" href="#">contact</a>
+            </li>
           </ul>
+        </div>
+        <div class="sign-up">
+          <button class="sign-up-btn">sign in</button>
+        </div>
+        <div class="hamburger-menu">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </header>
+
+    <!-- Sign-up Modal -->
+
+    <div class="sign-up-modal">
+      <div class="sign-up-content">
+        <div class="modal-close">X</div>
+        <div class="form-container sign-in-container">
+          <form class="form-content">
+            <h2 class="form-title">sign in</h2>
+            <input class="form-input" type="email" placeholder="email" />
+            <input class="form-input" type="password" placeholder="password" />
+            <a href="#">forgot your password ?</a>
+            <button class="form-btn sign-in-form-btn">sign in</button>
+          </form>
+        </div>
+        <div class="form-container sign-up-container">
+          <form class="form-content">
+            <h2 class="form-title">create new account</h2>
+            <input class="form-input" type="text" placeholder="name" />
+            <input class="form-input" type="email" placeholder="email" />
+            <input class="form-input" type="password" placeholder="password" />
+            <button class="form-btn sign-up-form-btn">sign up</button>
+          </form>
+        </div>
+        <div class="overlay-container overlay-sign-in">
+          <div class="overlay-content">
+            <h2 class="overlay-title">welcome back</h2>
+            <p class="overlay-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit Expedita
+            </p>
+            <button class="overlay-btn sign-in-overlay-btn">sign in</button>
+          </div>
+        </div>
+        <div class="overlay-container overlay-sign-up">
+          <div class="overlay-content">
+            <h2 class="overlay-title">hello, friend</h2>
+            <p class="overlay-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit Expedita
+            </p>
+            <button class="overlay-btn sign-up-overlay-btn">sign up</button>
+          </div>
         </div>
       </div>
     </div>
+
+    <!-- End Header Section -->
+
+    <!-- Start Hero Section -->
+
+    <canvas class="canvas"> </canvas>
+
+    <div class="hero-section">
+      <div class="hero-section-content">
+        <i class="fab fa-accusoft hero-section-icon"></i>
+        <h1 class="hero-section-title">i build things for the web</h1>
+        <p class="hero-section-description">
+          our mission is adding value to your business by providing a good
+          services
+        </p>
+        <button class="hero-section-btn">contact us</button>
+      </div>
+    </div>
+
+    <!-- End Hero Section -->
+
+    <div id="about" class="about-section">
+      <div class="about-content">
+        <h2 class="about-title">hi, i'm touza2el. web & mobile developer</h2>
+        <p class="about-description">
+          Since beginning my journey as a freelance designer nearly 10 years
+          ago, I've done remote work for agencies, consulted for startups, and
+          collaborated with talented people to create digital products for both
+          business and consumer use. I'm quietly confident, naturally curious,
+          and perpetually working on improving my chops one design problem at a
+          time.
+        </p>
+        <p class="about-description-mobile">
+          i build thing for the web
+        </p>
+      </div>
+      <div class="about-skills">
+        <div class="skill-item left">
+          <i class="fas fa-drafting-compass skill-icon"></i>
+          <h3 class="skill-title">designer</h3>
+          <p class="skill-description">
+            I value simple content structure, clean design patterns, and
+            thoughtful interactions.
+          </p>
+          <p class="skill-tools-title">design tools :</p>
+          <p class="skill-tools-item">photoshop</p>
+          <p class="skill-tools-item">illustrator</p>
+          <p class="skill-tools-item">adobe XD</p>
+        </div>
+        <div class="skill-item center">
+          <i class="fas fa-laptop-code skill-icon"></i>
+
+          <h3 class="skill-title">web developer</h3>
+          <p class="skill-description">
+            I like to code things from scratch, and enjoy bringing ideas to life
+            in the browser.
+          </p>
+          <p class="skill-tools-title">web tools :</p>
+          <p class="skill-tools-item">HTML</p>
+          <p class="skill-tools-item">CSS</p>
+          <p class="skill-tools-item">JavaScript</p>
+          <p class="skill-tools-item">react</p>
+          <p class="skill-tools-item">react Native</p>
+          <p class="skill-tools-item">wordpress</p>
+        </div>
+        <div class="skill-item right">
+          <i class="fas fa-file-video skill-icon"></i>
+          <h3 class="skill-title">marketing</h3>
+          <p class="skill-description">
+            I genuinely care about people, and love helping fellow designers
+            work on their craft.
+          </p>
+          <p class="skill-tools-title">platforms :</p>
+          <p class="skill-tools-item">facebook ads</p>
+          <p class="skill-tools-item">google ads</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Start Portfolio Section -->
+
+    <div class="product-section">
+      <div class="container">
+        <div class="section-header">
+          <h1 class="section-title">| Our Portfolio |</h1>
+        </div>
+        <div class="product-section-nav">
+          <button class="product-btn active" type="button" data-filter="all">
+            all
+          </button>
+          <button class="product-btn" type="button" data-filter="design">
+            design
+          </button>
+          <button class="product-btn" type="button" data-filter="coding">
+            coding
+          </button>
+          <button class="product-btn" type="button" data-filter="marketing">
+            marketing
+          </button>
+        </div>
+        <div class="product-section-content">
+          <div class="product-item" data-category="design">
+            <div class="product-item-image">
+              <img src="images/portfolio/1.jpg" />
+            </div>
+            <div class="product-item-info">
+              <h4 class="info-title">design</h4>
+              <div class="product-icon">
+                <i class="fa fa-search"></i>
+              </div>
+            </div>
+          </div>
+          <div class="product-item" data-category="marketing">
+            <div class="product-item-image">
+              <img src="images/portfolio/2.jpg" />
+            </div>
+            <div class="product-item-info">
+              <h4 class="info-title">marketing</h4>
+              <div class="product-icon">
+                <i class="fa fa-search"></i>
+              </div>
+            </div>
+          </div>
+          <div class="product-item" data-category="design">
+            <div class="product-item-image">
+              <img src="images/portfolio/3.jpg" />
+            </div>
+            <div class="product-item-info">
+              <h4 class="info-title">design</h4>
+              <div class="product-icon">
+                <i class="fa fa-search"></i>
+              </div>
+            </div>
+          </div>
+          <div class="product-item" data-category="coding">
+            <div class="product-item-image">
+              <img src="images/portfolio/4.jpg" />
+            </div>
+            <div class="product-item-info">
+              <h4 class="info-title">coding</h4>
+              <div class="product-icon">
+                <i class="fa fa-search"></i>
+              </div>
+            </div>
+          </div>
+          <div class="product-item" data-category="marketing">
+            <div class="product-item-image">
+              <img src="images/portfolio/5.jpg" />
+            </div>
+            <div class="product-item-info">
+              <h4 class="info-title">marketing</h4>
+              <div class="product-icon">
+                <i class="fa fa-search"></i>
+              </div>
+            </div>
+          </div>
+          <div class="product-item" data-category="design">
+            <div class="product-item-image">
+              <img src="images/portfolio/6.jpg" />
+            </div>
+            <div class="product-item-info">
+              <h4 class="info-title">design</h4>
+              <div class="product-icon">
+                <i class="fa fa-search"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Light Box -->
+        <div class="light-box">
+          <div class="light-box-content">
+            <div class="light-box-close-btn">
+              &times;
+            </div>
+            <div class="light-box-image">
+              <img src="images/portfolio/2.jpg" alt="light-box image" />
+            </div>
+            <div class="light-box-caption">
+              <div class="caption-text"></div>
+              <div class="caption-counter"></div>
+            </div>
+          </div>
+          <div class="light-box-controls">
+            <div class="next-arrow">
+              <i class="fa fa-angle-left controls-icon"></i>
+            </div>
+            <div class="prev-arrow">
+              <i class="fa fa-angle-right controls-icon"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End Portfolio Section -->
+
+    <!-- Start Blog Section -->
+
+    <div class="blog-section">
+      <div class="section-header">
+        <h1 class="section-title">| latest blog |</h1>
+      </div>
+      <div class="blog-content-container">
+        <div class="blog-content">
+          <div class="blog-item">
+            <div class="blog-image"><img src="images/blog/1.jpg" alt="" /></div>
+            <div class="blog-text">
+              <p class="blog-date">2 Mar 2019 | Design</p>
+              <h3 class="blog-title">design</h3>
+              <p class="blog-description">
+                Lorem ipsum dolor sit amret consectetur nonkld adipisicing elit
+                Ducimus skill
+              </p>
+              <a href="#" class="blog-read-more">read more</a>
+            </div>
+          </div>
+          <div class="blog-item">
+            <div class="blog-image">
+              <img src="images/blog/2.jpg" alt="" />
+            </div>
+            <div class="blog-text">
+              <p class="blog-date">2 Mar 2019 | Design</p>
+              <h3 class="blog-title">coding</h3>
+              <p class="blog-description">
+                Lorem ipsum dolor sit amret consectetur nonkld adipisicing elit
+                Ducimus skill
+              </p>
+              <a href="#" class="blog-read-more">read more</a>
+            </div>
+          </div>
+          <div class="blog-item">
+            <div class="blog-image"><img src="images/blog/3.jpg" alt="" /></div>
+            <div class="blog-text">
+              <p class="blog-date">2 Mar 2019 | Design</p>
+              <h3 class="blog-title">marketing</h3>
+              <p class="blog-description">
+                Lorem ipsum dolor sit amret consectetur nonkld adipisicing elit
+                Ducimus skill
+              </p>
+              <a href="#" class="blog-read-more">read more</a>
+            </div>
+          </div>
+          <div class="blog-item">
+            <div class="blog-image"><img src="images/blog/4.jpg" alt="" /></div>
+            <div class="blog-text">
+              <p class="blog-date">2 Mar 2019 | Design</p>
+              <h3 class="blog-title">Sales</h3>
+              <p class="blog-description">
+                Lorem ipsum dolor sit amret consectetur nonkld adipisicing elit
+                Ducimus skill
+              </p>
+              <a href="#" class="blog-read-more">read more</a>
+            </div>
+          </div>
+          <div class="blog-item">
+            <div class="blog-image">
+              <img src="images/blog/5.jpeg" alt="" />
+            </div>
+            <div class="blog-text">
+              <p class="blog-date">2 Mar 2019 | Design</p>
+              <h3 class="blog-title">copyrighting</h3>
+              <p class="blog-description">
+                Lorem ipsum dolor sit amret consectetur nonkld adipisicing elit
+                Ducimus skill
+              </p>
+              <a href="#" class="blog-read-more">read more</a>
+            </div>
+          </div>
+          <div class="blog-item">
+            <div class="blog-image"><img src="images/blog/6.jpg" alt="" /></div>
+            <div class="blog-text">
+              <p class="blog-date">2 Mar 2019 | Design</p>
+              <h3 class="blog-title">wordpress</h3>
+              <p class="blog-description">
+                Lorem ipsum dolor sit amret consectetur nonkld adipisicing elit
+                Ducimus skill
+              </p>
+              <a href="#" class="blog-read-more">read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="blog-controls">
+        <button class="blog-btn blog-prev-btn">prev</button>
+        <button class="blog-btn blog-next-btn">next</button>
+      </div>
+    </div>
+
+    <!-- End Blog Section -->
+
+    <!-- Start Contact Section -->
+
+    <div class="contact-section">
+      <div class="section-header">
+        <h1 class="section-title">| get in touch |</h1>
+      </div>
+      <div class="contact-content">
+        <h3 class="contact-title">drop us a line</h3>
+        <p class="contact-description">our team is ready for your help</p>
+        <form class="contact-form">
+          <input class="contact-input" type="text" placeholder="name" />
+          <input class="contact-input" type="text" placeholder="email" />
+          <textarea
+            class="contact-textarea"
+            cols="30"
+            rows="10"
+            placeholder="your message"
+          ></textarea>
+        </form>
+        <button class="contact-btn">send your message</button>
+      </div>
+    </div>
+
+    <!-- End Contact Section -->
+
+    <!-- Start Footer Section -->
+
+    <footer class="footer-section">
+      <div class="footer-content">
+        <div class="footer-info">
+          <div class="footer-links">
+            <h3 class="footer-logo">
+              best<span class="footer-logo-span">C</span>oding
+            </h3>
+            <div class="footer-social-media">
+              <i class="fab fa-facebook-square fa-2x"></i>
+              <i class="fab fa-linkedin fa-2x"></i>
+              <i class="fab fa-twitter-square fa-2x"></i>
+              <i class="fab fa-instagram fa-2x"></i>
+            </div>
+          </div>
+          <div class="footer-about footer-info-item">
+            <ul>
+              <li>
+                <a href="#" class="footer-link-title"
+                  >about best<span>C</span>oding</a
+                >
+              </li>
+              <li><a href="#">our story</a></li>
+              <li><a href="#">careers</a></li>
+              <li><a href="#">international</a></li>
+              <li><a href="#">corporate sales</a></li>
+              <li><a href="#">press</a></li>
+            </ul>
+          </div>
+          <div class="footer-services footer-info-item">
+            <ul>
+              <li>
+                <a href="#" class="footer-link-title">service we offer</a>
+              </li>
+              <li><a href="#">gift cards</a></li>
+              <li><a href="#">shipping & returns</a></li>
+              <li><a href="#">order status</a></li>
+              <li><a href="#">manipulating product</a></li>
+              <li><a href="#">contact us</a></li>
+            </ul>
+          </div>
+          <div class="footer-blog footer-info-item">
+            <ul>
+              <li>
+                <a href="#" class="footer-link-title">read our blog</a>
+              </li>
+              <li><a href="#" class="footer-btn">blog</a></li>
+            </ul>
+          </div>
+          <div class="footer-find-us footer-info-item">
+            <ul>
+              <li>
+                <a href="#" class="footer-link-title">find our location</a>
+              </li>
+              <li><a href="#" class="footer-btn">find us</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <p>copyright&copy; 2020 bestCoding</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Start Footer Section -->
     <script src="js/main.js"></script>
   </body>
 </html>
